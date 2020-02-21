@@ -10,14 +10,17 @@
 """
 
 def get_summ(num_one, num_two):
-    """
-    Замените pass на ваш код
-    """
-    pass
+    try:
+        num1 = int(num_one)
+        num2 = int(num_two)
+        return num1+num2
+    except ValueError:
+        print('Ошибка')
+        
     
 if __name__ == "__main__":
-    print(get_summ(2, 2))
-    print(get_summ(3, "3"))
-    print(get_summ("4", "4"))
-    print(get_summ("five", 5))
-    print(get_summ("six", "шесть"))
+    print(get_summ(3, 4))
+    print(get_summ(3, "5"))
+    print(get_summ("10", "43"))
+    print(get_summ("четыре", 6))
+    print(get_summ("двенадцать", "Сто"))
